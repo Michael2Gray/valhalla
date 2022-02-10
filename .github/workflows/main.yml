@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
+      - name: Checkout repo  🛎️
         uses: actions/checkout@v2
 
       - name: Use Node ${{ matrix.node }}
@@ -42,13 +42,13 @@ jobs:
         run: yarn build-storybook
 
   publish:
-    name: Publish
+    name: Publish and Deploy
     if: ${{ github.ref == 'refs/heads/master' }}
     needs: [quality]
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
+      - name: Checkout repo  🛎️
         uses: actions/checkout@v2
 
       - name: Use Node ${{ matrix.node }}
@@ -71,3 +71,12 @@ jobs:
 
       - name: Build Storybook
         run: yarn build-storybook -o ./public
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@3.6.2
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: master
+          FOLDER: public
+          CLEAN: true
+          TARGET_FOLDER: docs
