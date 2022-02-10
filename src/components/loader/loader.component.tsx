@@ -9,14 +9,14 @@ type LoaderProps = {
 export const Loader = ({ size = 'md' }: LoaderProps) => (
   <div
     className={clsx('relative flex items-center', {
-      'w-6 h-6': size === 'md',
-      'w-4 h-4': size === 'sm',
+      'h-6 w-6': size === 'md',
+      'h-4 w-4': size === 'sm',
     })}
   >
     <motion.div
       className={clsx('absolute bg-brand-400', {
-        'w-1.5 h-1.5': size === 'md',
-        'w-1 h-1': size === 'sm',
+        'h-1.5 w-1.5': size === 'md',
+        'h-1 w-1': size === 'sm',
       })}
       animate={{
         x: ['0rem', size === 'md' ? '1.125rem' : '0.75rem', '0rem'],

@@ -13,9 +13,9 @@ export const TextButton = forwardRef<HTMLButtonElement, TextButtonProps>(
       ref={ref}
       type="button"
       className={clsx(
-        'p-0.5 text-xs uppercase font-bold tracking-widest rounded transition',
+        'rounded p-0.5 text-xs font-bold uppercase tracking-widest transition',
         'hover:text-brand-hover active:text-brand-active',
-        'focus:outline-none focus-visible:ring focus-visible:ring-brand focus-visible:ring-offset-1',
+        'focus-visible:ring-brand focus:outline-none focus-visible:ring focus-visible:ring-offset-1',
         className
       )}
       onClick={onClick}

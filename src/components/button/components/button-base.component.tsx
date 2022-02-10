@@ -38,9 +38,9 @@ export const ButtonBase = forwardRef<HTMLButtonElement, ButtonBaseProps>(
       type={type}
       disabled={isLoading || isDisabled}
       className={clsx(
-        'flex justify-center items-center border rounded font-bold transition',
-        'focus:outline-none focus-visible:ring focus-visible:ring-brand focus-visible:ring-offset-1',
-        'disabled:opacity-40 disabled:cursor-not-allowed',
+        'flex items-center justify-center rounded border font-bold transition',
+        'focus-visible:ring-brand focus:outline-none focus-visible:ring focus-visible:ring-offset-1',
+        'disabled:cursor-not-allowed disabled:opacity-40',
         BUTTON_BASE_VARIANTS[variant],
         className
       )}
