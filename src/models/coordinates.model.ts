@@ -1,4 +1,4 @@
-export type Coordinates = Pick<
-  GeolocationCoordinates,
-  'latitude' | 'longitude'
->;
+export type Coordinates = {
+  latitude: number;
+  longitude: number;
+};
