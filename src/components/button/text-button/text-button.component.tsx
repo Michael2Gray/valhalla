@@ -1,4 +1,4 @@
-import { forwardRef, MouseEventHandler, ReactNode } from 'react';
+import React, { forwardRef, MouseEventHandler, ReactNode } from 'react';
 import clsx from 'clsx';
 
 export type TextButtonProps = {
