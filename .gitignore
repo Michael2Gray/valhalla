@@ -3,6 +3,7 @@
 node_modules
 .cache
 dist
+docs
 storybook-static
 coverage
 junit.xml
