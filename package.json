@@ -1,5 +1,5 @@
 {
-  "version": "0.0.0-development",
+  "version": "1.3.0",
   "license": "MIT",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -44,7 +44,7 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "valhalla",
+  "name": "@michael2gray/valhalla",
   "author": "Michael Gray",
   "module": "dist/valhalla.esm.js",
   "size-limit": [
@@ -57,12 +57,9 @@
       "limit": "200 KB"
     }
   ],
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/Michael2Gray/valhalla.git"
-  },
+  "repository": "git://github.com/Michael2Gray/valhalla.git",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "registry": "https://npm.pkg.github.com/"
   },
   "devDependencies": {
     "@babel/core": "^7.17.0",
