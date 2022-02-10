@@ -1,4 +1,4 @@
-import React, { forwardRef, MouseEventHandler, ReactNode } from 'react';
+import React from 'react';
 import clsx from 'clsx';
 
 import { BUTTON_BASE_VARIANTS } from '../constants';
@@ -9,8 +9,8 @@ export type ButtonBasePublicProps = {
   size?: 'sm' | 'md';
   isDisabled?: boolean;
   isLoading?: boolean;
-  children: ReactNode;
-  onClick?: MouseEventHandler<HTMLButtonElement>;
+  children: React.ReactNode;
+  onClick?: React.MouseEventHandler<HTMLButtonElement>;
 };
 
 type ButtonBaseProps = ButtonBasePublicProps & {
@@ -18,7 +18,7 @@ type ButtonBaseProps = ButtonBasePublicProps & {
   'aria-label'?: string;
 };
 
-export const ButtonBase = forwardRef<HTMLButtonElement, ButtonBaseProps>(
+export const ButtonBase = React.forwardRef<HTMLButtonElement, ButtonBaseProps>(
   (
     {
       type = 'button',

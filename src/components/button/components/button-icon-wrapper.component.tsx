@@ -1,8 +1,8 @@
-import React, { ReactNode } from 'react';
+import React from 'react';
 import clsx from 'clsx';
 
 type ButtonIconWrapperProps = {
-  children: ReactNode;
+  children: React.ReactNode;
   size: 'sm' | 'md';
 };
 

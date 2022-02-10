@@ -1,4 +1,4 @@
-import React, { forwardRef, ReactElement } from 'react';
+import React from 'react';
 import clsx from 'clsx';
 
 import { Loader } from '../loader';
@@ -14,13 +14,13 @@ const sizes = {
 };
 
 type IconProps =
-  | { startIcon: ReactElement; endIcon?: never }
-  | { endIcon: ReactElement; startIcon?: never }
+  | { startIcon: React.ReactElement; endIcon?: never }
+  | { endIcon: React.ReactElement; startIcon?: never }
   | { endIcon?: undefined; startIcon?: undefined };
 
 export type ButtonProps = ButtonBasePublicProps & IconProps;
 
-export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
+export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   (
     { size = 'md', isLoading = false, startIcon, endIcon, children, ...props },
     ref

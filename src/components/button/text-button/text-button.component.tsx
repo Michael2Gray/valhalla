@@ -1,13 +1,13 @@
-import React, { forwardRef, MouseEventHandler, ReactNode } from 'react';
+import React from 'react';
 import clsx from 'clsx';
 
 export type TextButtonProps = {
-  children: ReactNode;
-  onClick?: MouseEventHandler<HTMLButtonElement>;
+  children: React.ReactNode;
+  onClick?: React.MouseEventHandler<HTMLButtonElement>;
   className?: string;
 };
 
-export const TextButton = forwardRef<HTMLButtonElement, TextButtonProps>(
+export const TextButton = React.forwardRef<HTMLButtonElement, TextButtonProps>(
   ({ children, onClick, className }, ref) => (
     <button
       ref={ref}
