@@ -4,9 +4,10 @@ import { motion } from 'framer-motion';
 
 type LoaderProps = {
   size?: 'sm' | 'md';
+  className?: string;
 };
 
-export const Loader = ({ size = 'md' }: LoaderProps) => (
+export const Loader = ({ size = 'md', className }: LoaderProps) => (
   <div
     className={clsx('relative flex items-center', {
       'h-6 w-6': size === 'md',
@@ -14,10 +15,14 @@ export const Loader = ({ size = 'md' }: LoaderProps) => (
     })}
   >
     <motion.div
-      className={clsx('absolute bg-brand-400', {
-        'h-1.5 w-1.5': size === 'md',
-        'h-1 w-1': size === 'sm',
-      })}
+      className={clsx(
+        'absolute bg-neutral-400',
+        {
+          'h-1.5 w-1.5': size === 'md',
+          'h-1 w-1': size === 'sm',
+        },
+        className
+      )}
       animate={{
         x: ['0rem', size === 'md' ? '1.125rem' : '0.75rem', '0rem'],
       }}

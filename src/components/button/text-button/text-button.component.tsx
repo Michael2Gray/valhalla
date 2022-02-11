@@ -14,8 +14,8 @@ export const TextButton = React.forwardRef<HTMLButtonElement, TextButtonProps>(
       type="button"
       className={clsx(
         'rounded p-0.5 text-xs font-bold uppercase tracking-widest transition',
-        'hover:text-brand-hover active:text-brand-active',
-        'focus-visible:ring-brand focus:outline-none focus-visible:ring focus-visible:ring-offset-1',
+        'hover:text-neutral-hover active:text-neutral-active',
+        'focus-visible:ring-neutral focus:outline-none focus-visible:ring focus-visible:ring-offset-1',
         className
       )}
       onClick={onClick}

@@ -29,8 +29,10 @@
   },
   "peerDependencies": {
     "clsx": "^1.1.1",
+    "date-fns": "^2.28.0",
     "framer-motion": "4.1.17",
     "react": ">=16",
+    "react-hook-form": "^7.27.0",
     "react-icons": "^4.3.1"
   },
   "husky": {
@@ -102,6 +104,7 @@
     "prettier": "^2.5.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-hook-form": "^7.27.0",
     "react-icons": "^4.3.1",
     "react-is": "^17.0.2",
     "regenerator-runtime": "^0.13.9",

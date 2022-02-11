@@ -4,7 +4,7 @@ import clsx from 'clsx';
 export type HeadingProps = {
   level?: 1 | 2 | 3 | 4 | 5 | 6;
   size?: 'xs' | 'sm' | 'md' | 'lg' | 'xl';
-  variant?: 'default' | 'brand' | 'white';
+  variant?: 'default' | 'white';
   weight?: 'normal' | 'bold';
   className?: string;
   children: React.ReactNode;
@@ -28,7 +28,6 @@ export const Heading = ({
         'font-bold': weight === 'bold',
       },
       {
-        'text-brand-800': variant === 'brand',
         'text-white': variant === 'white',
       },
       {
