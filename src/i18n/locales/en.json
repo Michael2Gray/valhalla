@@ -1,0 +1,15 @@
+{
+  "VALHALLA": {
+    "ACTIONS": {
+      "CLOSE": "Close"
+    },
+    "CHECKBOX": {
+      "ALL": "All"
+    },
+    "PAGINATION": {
+      "NEXT": "Next",
+      "PREV": "Previous",
+      "RESULTS": "{from}-{to} of {total}"
+    }
+  }
+}

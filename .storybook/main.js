@@ -3,7 +3,6 @@ module.exports = {
   addons: [
     '@storybook/addon-links',
     '@storybook/addon-essentials',
-    '@storybook/addon-a11y',
     {
       name: '@storybook/addon-postcss',
       options: {
@@ -12,7 +11,11 @@ module.exports = {
         },
       },
     },
+    '@storybook/addon-docs',
   ],
-
-  framework: '@storybook/react',
+  // https://storybook.js.org/docs/react/configure/typescript#mainjs-configuration
+  typescript: {
+    check: true, // type-check stories during Storybook build
+    reactDocgen: 'react-docgen',
+  },
 };

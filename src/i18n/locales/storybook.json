@@ -1,0 +1,55 @@
+{
+  "STORY_BOOK": {
+    "ALERT": {
+      "ACTION": "Action",
+      "CANCEL": "Cancel",
+      "CLOSE": "Close",
+      "CONFIRMATION_CONTENT": "This action cannot be undone.",
+      "CONTINUE": "Continue",
+      "DELETE_ACCOUNT": "Delete Account",
+      "DESCRIPTION": "Description",
+      "ERROR_CONTENT": "This is the content of the Error.",
+      "SHOW_ERROR": "Show Error",
+      "TITLE": "Title",
+      "TITLE_ERROR": "Error",
+      "TITLE_WARNING": "Warning are you sure you want to do this?",
+      "TRIGGER": "Trigger"
+    },
+    "BODY": "Body",
+    "BUTTON": "Button",
+    "BUTTON_LEFT": "Element on left",
+    "BUTTON_RIGHT": "Element on right",
+    "BUTTON_BOTH": "Elements on both",
+    "CAPTION": "Caption",
+    "CARD": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu tellus eleifend, vulputate ligula sit amet, fringilla metus. Aenean dignissim turpis libero, sit amet scelerisque ex lobortis nec. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vestibulum tincidunt nulla non libero sodales, sed posuere urna feugiat. ",
+    "CUSTOM_TYPOGRAPHY": "Custom Typography",
+    "CHECKBOX": {
+      "BLUE": "Blue",
+      "GREEN": "Green",
+      "HELP": "Help Message",
+      "LABEL": "Checkbox Label",
+      "RED": "Red",
+      "YELLOW": "Yellow"
+    },
+    "HEADING_ONE": "Heading One",
+    "HEADING_TWO": "Heading Two",
+    "HEADING_THREE": "Heading Three",
+    "HEADING_FOUR": "Heading Four",
+    "INTRO": {
+      "TITLE": "Design System Content"
+    },
+    "LABEL": "Label",
+    "NOTIFICATION": {
+      "ACTION": "Action",
+      "CONTENT": "This is a notification!",
+      "DEFAULT": "Show Notification",
+      "ERROR": "Show Error Notification",
+      "INFO": "Show Info Notification",
+      "SUCCESS": "Show Success Notification",
+      "WARNING": "Show Warning Notification"
+    },
+    "SHOW_TOOLTIP": "Show Tooltip",
+    "SUBTITLE_ONE": "Subtitle One",
+    "SUBTITLE_TWO": "Subtitle Two"
+  }
+}
