@@ -8,7 +8,7 @@ on:
 
 jobs:
   quality:
-    name: Build, Lint and Test
+    name: Quality Check
     runs-on: ubuntu-latest
 
     steps:
@@ -72,11 +72,7 @@ jobs:
       - name: Build Storybook
         run: yarn build-storybook -o ./public
 
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4.2.3
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          branch: master
-          folder: public
-          clean: true
-          target-folder: docs
+      - name: Deploy to GitHub Pages
+        run: yarn deploy:storybook
+        env:
+          GH_TOKEN: ${{ github.actor }}:${{ secrets.VALHALLA_RW }}
