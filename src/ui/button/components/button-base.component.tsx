@@ -1,16 +1,13 @@
-import React from 'react';
+import React, { ComponentPropsWithRef } from 'react';
 import clsx from 'clsx';
 
 import { BUTTON_BASE_VARIANTS } from '../constants';
 
-export type ButtonBasePublicProps = {
-  type?: 'button' | 'submit' | 'reset';
+export type ButtonBasePublicProps = ComponentPropsWithRef<'button'> & {
   variant?: keyof typeof BUTTON_BASE_VARIANTS;
   size?: 'sm' | 'md';
   isDisabled?: boolean;
   isLoading?: boolean;
-  children: React.ReactNode;
-  onClick?: React.MouseEventHandler<HTMLButtonElement>;
 };
 
 type ButtonBaseProps = ButtonBasePublicProps & {
@@ -34,8 +31,7 @@ export const ButtonBase = React.forwardRef<HTMLButtonElement, ButtonBaseProps>(
   ) => (
     <button
       ref={ref}
-      // eslint-disable-next-line react/button-has-type
-      type={type}
+      type={type === 'submit' ? 'submit' : 'button'}
       disabled={isLoading || isDisabled}
       className={clsx(
         'flex items-center justify-center rounded border font-bold transition',
