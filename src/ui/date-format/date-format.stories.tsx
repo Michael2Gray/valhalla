@@ -15,5 +15,5 @@ const Template: ComponentStory<typeof DateFormat> = (args) => (
 export const Default = Template.bind({});
 Default.args = {
   date: new Date(),
-  format: "E, d MMM yyyy"
+  format: 'E, d MMM yyyy',
 };
