@@ -39,7 +39,7 @@ export const I18n = <Locales extends 'en'>({
       messages={flattenMessages(mergedMessages)}
       defaultLocale={currentLocale}
     >
-      {children}
+      <>{children}</>
     </IntlProvider>
   );
 };
