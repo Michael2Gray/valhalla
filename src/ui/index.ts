@@ -1,6 +1,8 @@
 export * from './alert';
 export * from './button';
 export * from './card';
+export * from './centered-column';
+export * from './chip';
 export * from './coords';
 export * from './date-format';
 export * from './distance';
@@ -17,5 +19,6 @@ export * from './stack';
 export * from './status';
 export * from './temperature';
 export * from './text-field';
+export * from './traffic-light-number';
 export * from './typography';
 export * from './weather-icon';
