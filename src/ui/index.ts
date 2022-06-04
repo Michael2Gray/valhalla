@@ -18,3 +18,4 @@ export * from './status';
 export * from './temperature';
 export * from './text-field';
 export * from './typography';
+export * from './weather-icon';
