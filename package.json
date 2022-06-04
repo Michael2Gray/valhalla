@@ -71,6 +71,7 @@
     "@commitlint/cli": "^16.1.0",
     "@commitlint/config-conventional": "^16.0.0",
     "@radix-ui/react-tooltip": "^0.1.7",
+    "@rollup/plugin-image": "^2.1.1",
     "@size-limit/preset-small-lib": "^7.0.8",
     "@storybook/addon-docs": "6.5.0-alpha.41",
     "@storybook/addon-essentials": "6.4.18",
